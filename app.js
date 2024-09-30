@@ -5,22 +5,21 @@ document.getElementById("showw").innerHTML = numbers
 // expected result stored in an array
 // Acendind  Order
 
-var acendingOutput ;   
+let acendingOutput ;   
 function acending(){
-var check = [2,3,5,7,8,9,10]       
+let check = [2,3,5,7,8,9,10]       
 
-var result = ["","","","","","","",]
+let result = ["","","","","","","",]
 
-for(var i = 0; i<numbers.length; i++){ 
+for(let i = 0; i<numbers.length; i++){ 
       
-   for(var j =0; j<check.length; j++){
+   for(let j =0; j<check.length; j++){
     
     if(numbers[i]==check[j]){
       result.splice(j,1,numbers[i])
     }  
    }
 }
-// document.write(result);
 acendingOutput = (result)
 document.getElementById("showa").innerHTML = acendingOutput
 }
@@ -28,7 +27,7 @@ document.getElementById("showa").innerHTML = acendingOutput
 
 
 
-var dcendingOutput ;   
+let dcendingOutput ;   
 function decending(){
 let check = [10,9,8,7,5,3,2]       
 
